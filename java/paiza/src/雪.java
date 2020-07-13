@@ -1,18 +1,13 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class ад {
 	static void dd(int[] bb, int n, int k) {
 		int temp;
 		int count = 0;
+		Arrays.sort(bb);
 		for (int i = 0; i < n - 1; i++) {
-			for (int j = 1 + i; j < n; j++) {
-				if (bb[i] > bb[j]) {
-					temp = bb[j];
-					bb[j] = bb[i];
-					bb[i] = temp;
 
-				}
-			}
 			for (int j = 1 + i; j < n; j++) {
 				if (bb[i] == 0)
 					break;
@@ -24,6 +19,7 @@ public class ад {
 				}
 			}
 		}
+		
 		System.out.println(count);
 
 	}
@@ -36,6 +32,7 @@ public class ад {
 		for (int i = 0; i < n; i++) {
 			bb[i] = s.nextInt();
 		}
+
 		dd(bb, n, k);
 	}
 
