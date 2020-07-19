@@ -3,22 +3,10 @@ import java.util.Scanner;
 class hanoi {
 	static String pow(int n1) {
 		String a;
-//		int n2 = (int) Math.pow(2, n1 - 1) - 1;
 		if (n1 == 2)
 			return "001";
 		else if (n1 == 1)
 			return "0";
-//		String aaa = "";
-//		for (int i = 0; i <= n2 - 1; i++) {
-//			if (pow(n1 - 1).charAt(n2 - 1 - i) == '0') {
-//				aaa = aaa + '1';
-//			}
-//			if (pow(n1 - 1).charAt(n2 - 1 - i) == '1') {
-//				aaa = aaa + '0';
-//			}
-//
-//		}
-
 		String str = pow(n1 - 1);
 		String trs = "";
 		for (int i = str.length() - 1; i >= 0; i--) {
@@ -28,8 +16,6 @@ class hanoi {
 			if (str.charAt(i) == '1') {
 				trs = trs + '0';
 			}
-
-
 		}
 		a = pow(n1 - 1) + "0" + trs;
 		return a;
