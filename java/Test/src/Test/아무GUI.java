@@ -12,6 +12,7 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.util.HashMap;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -32,25 +33,36 @@ class Profile {
 }
 
 class pro1 extends JFrame {
-	pro1() {
+	ImageIcon ima;
 
-		setLayout(new GridLayout(5, 2));
-		JLabel jl[] = new JLabel[6];
+	pro1() {
+		setTitle("정보 입력");
+		JLabel jli = new JLabel("이미지 주소 : ");
+		JTextField jti = new JTextField(20);
+		setLayout(new GridLayout(9, 2));
+		JLabel jl[] = new JLabel[8];
 		JTextField jt[] = new JTextField[5];
-		jl[0]=new JLabel("사번 : ");
-		jl[1]=new JLabel("이름 : ");
-		jl[2]=new JLabel("부서 : ");
-		jl[3]=new JLabel("주소 : ");
-		jl[4]=new JLabel("특이사항");
-		for (int i = 0; i < 5; i++) {
+		jl[0] = new JLabel("사번 : ");
+		jl[1] = new JLabel("이름 : ");
+		jl[2] = new JLabel("부서 : ");
+		jl[3] = new JLabel("주소 : ");
+		jl[4] = new JLabel("특이사항");
+		jl[5] = new JLabel();
+		add(jli);
+		add(jti);
+
+		for (int i = 0; i < 4; i++) {
 			add(jl[i]);
-            jt[i]=new JTextField(10);			
+			jt[i] = new JTextField(10);
 			add(jt[i]);
 		}
-		
+		add(jl[4]);
+		add(jl[5]);
+		jt[4] = new JTextField(20);
+		add(jt[4]);
 
 		setVisible(true);
-		setSize(150, 150);
+		setSize(250, 200);
 	}
 }
 
@@ -83,7 +95,7 @@ class GU extends JFrame {
 		label.add(proima);
 		proima.setBackground(Color.BLACK);
 		proima.setOpaque(true);
-		proima.setBounds(270, 15, 70, 100);
+		proima.setBounds(250, 15, 90, 120);
 		label.setBackground(new Color(200, 200, 200));
 		label.setOpaque(true);
 		label.setBounds(20, 85, 352, 350);
