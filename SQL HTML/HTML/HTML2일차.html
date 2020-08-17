@@ -1277,7 +1277,7 @@ CSS 사용 구글 로고 만들기
 
 </body>
 </html> -->
-<htmL lang="ko">
+<!-- <htmL lang="ko">
 
 <head>
     <style>
@@ -1324,4 +1324,673 @@ CSS 사용 구글 로고 만들기
 
 </body>
 
-</htmL>
+</htmL> -->
+<!-- <html lang="ko">
+
+<head>
+    <style>
+#menu{
+background: aquamarine;
+
+}
+#menu ul{
+    width: 560px;
+    padding: 0;
+    margin: 0;
+}
+#menu li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 0px 20px ;/*top = bottom=0 , left=right=20px*/
+
+}li:hover{
+    background: pink;
+}
+
+    </style>
+</head>
+
+<body>
+    <ol>
+        <li>
+            <span>asdf</span>
+        </li>
+        <li style="background: aquamarine;">asdfasdf</li>
+
+    </ol>
+
+    <nav id="menu">
+        <ul>
+            <li>아메</li>
+            <li>얼죽아</li>
+            <li>아이스</li>
+
+        </ul>
+
+    </nav>
+
+</body>
+
+</html> -->
+<!-- 인라인 요소 inline
+
+1. 크기값을 지정못한다.
+2. 상하 마진을 못 가짐
+3. 한줄에 여러개 배치
+4. 기본 너비값은 콘텐츠의 너비값
+ex)span, a, em, br, mark,strong 태그 
+
+-->
+<!-- 불록 요소 block 
+
+1. 크기값을 지정할 수 있다.
+2. 한줄에 한개만 배치 가능.(줄바꿈)
+3. 기본 너비값은 100%
+4. 상하좌우마진 모두 가짐.
+ex)div, ul, ol, li, form, p 태그 등등
+
+-->
+<!-- 인라인 블록 요소 inline block
+
+1. 한줄에 여러개 배치
+2. 크기값을 지정할 수 있다.
+3. 상하좌우마진 모두 가짐
+ex)
+-->
+<!-- <html lang="ko">
+
+<head>
+    <style>
+        span {
+            border: 1px solid aquamarine;
+            width: 400px;
+            height: 100px;
+            margin: 20px;
+        }
+
+        div {
+            border: 1px solid rebeccapurple;
+            width: 400px;
+            height: 100px;
+            margin: 20px;
+        }
+        div div{
+            display: inline-block;
+            border: 2px dotted firebrick;
+            background: blue;
+            margin: 10px;
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <span>인라인 요소.... </span>
+    <span>인라인 요소</span>
+    <span>인라인 요소</span>
+    <span>인라인 요소</span>
+    <span>인라인 요소</span>
+    <div>블록 요소</div>
+    <div>블록 요소</div>
+    <div>블록 요소</div>
+    <div>블록 요소</div>
+    <div>블록 요소</div>
+
+
+    <div style="background: rgb(255, 150, 150);">인라인 블록 요소
+        <div>인라인 블록 요소</div>
+        <div>인라인 블록 요소</div>
+    </div>
+</body>
+
+</html> -->
+<!-- <html lang="ko">
+
+<head>
+    <style>
+        body {
+            background: lightblue;
+            color: deeppink;
+        }
+
+        mark {
+            background: aquamarine;
+            color: deeppink;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: right;">홍길동</h1>
+    <hr>
+    <div>저는 개발자 홍길동 입니다. 음악을 들으면서 책읽기를 좋아합니다. <mark>웹 개발</mark>과 <mark>서버 개발 일을</mark> 무척 좋아합니다.</div>
+
+    <h1>텍스트, 폰트</h1>
+    <br>
+    <div style="background: yellow; font: Lucida console; font-size: 15px;">
+        yellow 바탕색에 검은색의 <q>Lucida console</q>폰트로 15px크기이고 <span
+            style="text-decoration: underline; font-size: 1.5em;">저는 이보다 1.5배 큽니다.</span>
+
+    </div>
+</body>
+
+</html> -->
+<!-- <html lang="ko">
+
+<head>
+    <style>
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            background: red;
+        }
+        body {
+            background: aliceblue;
+            color: green;
+        }
+
+        h2 {
+            
+            color: blue;
+            text-align: center;
+        }
+
+        #it {
+            margin-left: 100px;
+            font-style: italic;
+            color: black;
+        }
+
+        .red {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>제목</h1>
+    <hr>
+    <h2><das style="background: teal;">center</das></h2>
+    <div><span id="it">네 힘으로</span>안될 일에 눈을 감고 <span class="red">지나치게 앞 일에 </span>매여 <span class="red">지금 가진
+            것을</span>잃지는 마라.</div>
+
+
+
+    <h1>색 이름과 코드</h1>
+    <hr>
+    <table border="2">
+        <thead>
+            <th>이름</th>
+            <th>코드</th>
+            <th>색</th>
+            <th>이름</th>
+            <th>코드</th>
+            <th>색</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Brown</td>
+                <td>#A52A2A</td>
+                <td style="background-color: #A52A2A;"></td>
+                <td>DeepSkyBlue</td>
+                <td>#00BFFF</td>
+                <td style="background: #00BFFF;"></td>
+            </tr>
+            <tr>
+                <td>Blueviolet</td>
+                <td>#8A2BE2</td>
+                <td style="background: #8A2BE2;"></td>
+                <td>Gold</td>
+                <td>#FFD700</td>
+                <td style="background: #FFD700;"></td>
+            </tr><tr>
+                <td>DarkOrange</td>
+                <td>#FF8C00</td>
+                <td style="background-color: #FF8C00;"></td>
+                <td>OliveDrab</td>
+                <td>#6B8E23</td>
+                <td style="background: #6B8E23;"></td>
+            </tr>
+        </tbody>
+
+
+    </table>
+<h1>목차</h1>
+<hr>
+
+<ol>
+<li><a href="#1" target="_blank">목차 1</a></li>
+<li><a href="#2" target="_blank">목차 2</a></li>
+<li><a href="#3" target="_blank">목차 3</a></li>
+</ol>
+<h3 id="1">목차1</h3>
+<div>목록이나 제목, 항목 등을 차례로 늘어놓은 것.
+
+    책을 펼치면 '제1장 1절, 2절, 제2장 1절' 등의 형태로 늘어선 것이 목차다. 영어로는 Contents.
+    
+    비슷한 개념인 색인(인덱스)과 가끔 혼동하는 사람이 있는데, 이 둘은 분명히 다른 개념이다. 목차는 책 앞에서 '이 책 내용은 뭐다' 하고 순서대로 보여주는 것이고, 색인은 책 뒤에서 '그 내용을 알고 싶으면 몇 페이지로 가라'고 지름길을 안내해주는 것으로, 흔히 '찾아보기'라고 되어 있는 부분이 바로 색인이다.[1]
+    
+    목차는 보통 이런 형식으로 되어 있으며,</div>
+<h3 id="2">목차2</h3>
+<div>문서를 작성하거나 수정할 때 누구나 볼 수 있으며 이 위키에서는 아래 이미지와 같은 대괄호([ ])와 등호(=)를 사용해서 목차를 표기하고 있다. 등호의 개수에 따라 단계가 달라지며, 1개를 사용했을 때 해당 문서에서 가장 상위의 개념을 가리키게 된다. 이런 방식은 5단계까지 가능하므로 6단계 이상 가는 분류는 가능한 사용하지 말 것. 6개 이상 연결할 경우 등호만 표시되므로 목차가 정상적으로 표시되지 않는다.
+
+    참고로 등호의 개수가 적은 상위 단계일수록 시인성 등의 문제로 인해 제목의 글씨가 커진다는 특징이 있으므로 상위 단계에서는 가급적 글자 수를 적게 할 필요가 있다. 등호를 한 개만 쓰는 것은 권장되지 않는데 이는 대부분의 문서에서 하위 분류가 5단계까지 가지 않고 글자 크기가 너무 크면 가독성이 떨어지며, 다른 위키와의 호환성을 보장하기 위해서다. 그래서 해당 문서의 최상위 분류임에도 2개(==), 혹은 3개(===)를 사용하는 문서가 많다.
+    
+    위키에서 목차를 사용하는 경우는 두 가지가 있다. 첫째는 동음이의어·다의어 문서의 구분이다. 여러 개념을 내포하고 있는 문서명을 지닌 문서 내에서, 각각의 개념에 대한 설명을 분리하기 위함이다. 여기서 한 개념에 대한 설명이 길어질 경우에는 문서명(상위 개념)으로 새로운 문서를 만들어, 그 목차에서 링크를 단다. 나무위키에서는 '등호 2개(==)'를 사용해서 최상위 목차를 만들어야 한다. 과거에는 강제사항까지는 아니었으나, 2019년 6월 12일부터는 문단 1단계를 완전히 금지 사안[2]으로 넣으면서 최상위 단계가 2개(==) 사용이 아예 규정으로 명문화되었다.
+    
+    둘째는 한 개념에 대해 다양한 설명이 이어질 때, 구분할 수 있도록 만든 목록이다. 이는 가독성과 수정의 용이성을 위해 권장되는 사항이며 이 경우에는 '등호 3개(===)' 를 사용하여 목차를 만든다. 또한 목차에 들어가는 제목 줄에서 다른 문서로 링크를 연결하려면 예전에는 괄호를 1개만 사용해야 했으나 현재는 2개 사용이 가능하다.</div>
+<h3 id="3">목차3</h3>
+<div>현재 목차 시스템은 위와 같으나, 과거 리그베다 위키 시절에는 시스템상의 한계 및 작성의 용이 등으로 인해 동명이인, 동음이의어에 해당하는 문서의 경우 현재와 같은 목차 시스템 없이 다음과 같이 작성되는 사례가 많았다.
+</div>
+
+</body>
+
+</html> -->
+<!-- <html lang="ko">
+
+<head>
+    <style>
+        div {
+            border: 2px solid gold;
+            color: black;
+            background: aliceblue;
+        }
+
+        span {
+
+            border: 3px dotted red;
+            background-color: yellow;
+
+        }
+    </style>
+</head>
+
+<body>나는 <div style="display: none;">길동 홍</div>입니다</body>
+
+<body>나는 <div style="display: inline;">길동 홍</div>입니다</body>
+
+<body>나는 <div style="display: inline-block;">길동 홍</div>입니다</body>
+
+<body>나는 <div><span style="display: block;">길동 홍</span></div>입니다</body>
+
+</html> -->
+<!-- <html lang="ko">
+
+<head>
+    <style>
+        div.box {
+            background: yellow;
+            border: 1px solid peru;
+            margin: 40px;
+            border-width: 30px;
+            padding: 20px;
+        }
+
+        span {
+            background: deepskyblue;
+        }
+
+        body {
+            background: antiquewhite;
+        }
+
+        p {
+            border-left-width: 3px;
+            /*테두리 왼쪽 두깨*/
+            border-left-style: dotted;
+            border-left-color: hotpink;
+        }
+
+        div {
+            background: yellow;
+            margin: 15px;
+            padding: 30px;
+            border: 5px dotted red;
+        }
+
+        #r1 {
+            border-radius: 50px;
+            border: 10px solid red;
+            background: purple;
+        }
+#r2{border-radius: 0px 20px 40px 60px;border: 5px solid orange;}
+#r3{border-radius: 0px 20px 40px 20px;border: 5px solid yellow;}
+#r4{border-radius: 0px 20px 0px 20px; border:  5px solid green;}
+#r5{border-radius:50px; border: 5px dotted;}
+
+    </style>
+</head>
+
+<body>
+    <div class="box"><span>CSS</span></div>
+    <div>나랏말싸미 듕귁에 달아</div>
+    <p>가가가</p>
+    <p id="r1">반지름 50px의 둥근 모서리</p>
+    <p id="r2">반지름 0,20,40,60px의 둥근 모서리</p>
+    <p id="r3">반지름 0,20,40,20px의 둥근 모서리</p>
+    <p id="r4">반지름 0,20,0,20px의 둥근 모서리</p>
+    <p id="r5">반지름 50px의 둥근 점선 모서리</p>
+
+
+</body>
+
+</html> -->
+<!-- <html lang="ko">
+
+<head>
+    <style>
+div{
+    background: powderblue;
+    background-size: 100px 100px;
+    background-image: url("C:/Users/Administrator/Desktop/극장.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+div{width: 200px;
+height: 200px;
+color: purple;
+font-size: 15px;}
+    </style>
+</head>
+
+<body>
+    <p style="cursor: help;">도움말커서</p>
+    <p style="cursor: pointer;">도움말커서</p>
+    <p style="cursor: progress;">도움말커서</p>
+    <div>치킨이 먹고싶다. 저는 개발자길동
+        음악을 들으면서 책읽기를 좋아합니다.</div>
+        
+    
+</body>
+
+</html> -->
+<!-- <html lang="ko">
+
+<head>
+    <style>
+        dl div {
+            margin-left: 40px;
+            color: black;
+        }
+
+        dl {
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body style="margin: 0px; background: black; ">
+    <div style="background: cadetblue;">
+        <h1 style="color: white; display: inline;">애완견 종류</h1>
+        <div style="display: inline; text-align: center;">
+            <span style="color: white;"> 애완견 종류</span>
+            <span style="color: white;">입양하기</span>
+            <span style="color: white;">건강돌보기</span>
+            <span style="color: white;">더불어살기</span>
+        </div>
+    </div>
+    <div style="background: white; padding: 10px;">
+        <div style="border: 3px solid; border-radius: 5px; margin: 5px">
+            <h3> 활달한 강아지</h3>
+            <dl style="margin: 2px;">
+                <dt>요크셔테리어
+                    <div>생기있고 활달한 성질을 가지고 있으며 자신보다 몸집이 큰 개나 집에 들어온 침입자를 겁내는 일이 없어 좋은 번견이고 우리나라 최고의의 가정견으로 자리 잡고 있다.
+                    </div>
+                </dt>
+                <dl>말티즈
+                    <div>애정이 많고, 충실하며 활발한 성격을 소유하고있다. 이 종은 1급 가정견으로 요크셔테리어와 함께 우리나라 최고의 가정견으로 자리잡고 있다.</div>
+                </dl>
+                <dl>포메
+                    <div>활기차고 명랑한 개로 유명하고, 걷는 모습이 우아하다.충실하고 우호적인 성격이 가장 먼저 거론된다.
+
+                    </div>
+                </dl>
+                <dl>골든리트
+                    <div>이 견종은 충성심이 강하고 성격이 활달하여 어린아이나 여성이 상대하기에 적합한 견종이다.참을성 또한 강하여 현재는실내에서도 많이 길러지고 있다.</div>
+                </dl>
+
+            </dl>
+        </div>
+        <div style="border: 3px dotted purple; margin: 5px;">
+            <h3> 온순한 강아지</h3>
+            <dd style="margin: 2px;">
+                <dl>쉬즈
+                    <div>얼굴에서 풍기는 모습처럼 온순, 쉽게 친숙해지고 우호적이며,어린아이나 여성들이 기르기에 적합한 견종이다.
+
+                    </div>
+                </dl>
+                <dl>퍼그
+                    <div>매우 사려가 깊고 사랑스러운 견종이며 그다지 손질이 필요하지 않고 식사량에 비해 많은 운동량이 필요하지 않다.
+
+                </dl>
+                <dl>래브라도 리트리버
+                    <div>침착하고 영리하여 어린이들을 안심하고 맡길 수 있다. 사람을 즐겁게 해주려는 성질이 있다 공을 가지고 노는 것을 가장 좋아한다. 현재 맹인 안내견과 마약견으로 사용중이다.
+                        온순한 강아지를 좋아하는 분에게는 적합한 견종이다.
+                    </div>
+                </dl>
+
+
+            </dd>
+
+        </div>
+        <div style="border: 3px solid green; margin: 5px; border-radius: 30px 0px;">
+            <h3> 사납지만 복종적인 강아지</h3>
+            <dd style="margin: 2px;">
+                <dl>미니어쳐핀셔
+                    <div>경계심이 강하고 영리하며 작은 몸집에 비해 매우 용감하다. 주인에게 매우 복종적이며 작은 몸집에 보디가드 역할을 충실히 수행한다.
+                    </div>
+                </dl>
+                <dl>푸들
+                    <div>사납진 않으나, 상당히 복종적이며, 지능지수가 애완견종 중 가장 뛰어나다.
+                </dl>
+                <dl>폭스테리어
+                    <div>가정에서 키우기에 적합한 품종이다. 보호본능이 강하고 정이 많다. 하지만 사냥을 하던 본능이 조금은 남아있어 사나운 면이 있다. 이종을 좋은 품종으로 기르기 위해서는 어릴
+                        때부터 엄한 훈련이 필요하기도 하다. </div>
+                </dl>
+
+
+            </dd>
+
+
+        </div>
+        <div>
+            <h3> 건강한 강아지는</h3>
+            <ul style="margin: 2px;">
+                <li>코가 젖어있고 눈꼽이 없어야 합니다</li>
+                <li>털에 윤기가 있는 것을 골라야 합니다.</li>
+                <li>입에서 고약한 냄새가 나면 병이 있다는 증거입니다.</li>
+                <li>가장 활발하게 움직이는 녀석을 고르는게 좋습니다.</li>
+                <li>강아지들 중에서 적당한 체구를 유지한 강아지가 좋습니다.</li>
+
+            </ul>
+        </div>
+        Copyright
+    </div>
+
+</body>
+
+</html> -->
+<!-- <html lang="ko">
+
+<head>
+    <style>
+#flo{
+    float: right;
+    border: 1px dotted black;
+    width: 200px;
+    margin: 10px;
+    padding: 99px;
+}
+    </style>
+</head>
+
+<body>
+    <h3>시험 공지</h3>
+    <hr>
+    <div>
+        <p id="flo">
+            20일은 특별 시험이 있습니다.
+
+        </p>
+        <p>이제 CSS가 끝나갑니다. 열공하시길 바랍니다. 
+            프로젝트 개발에 더욱 힘써주세요. 그럼 다음에 만나요.</p>
+    </div>
+</body>
+
+</html> -->
+<!-- <html lang="ko">
+
+<head>
+    <style>
+#pp:hover{position: relative;
+left: 20px;
+top: 20px;
+background: green;}
+
+#ll:hover{
+
+    position: relative;
+    right: 20px;
+    bottom: 20px;
+    background: greenyellow;}
+
+div{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border: 1px solid gray;
+    text-align: center;
+    color: wheat;
+    background: red;
+}
+    </style>
+</head>
+
+<body>
+    <div>A</div>
+    <div id="pp">P</div>
+    <div>P</div>
+    <div id="ll">L</div>
+    <div>E</div>
+
+</body>
+
+</html> -->
+<!-- <html lang="ko">
+
+<head>
+    <style>
+        div {
+            display: inline-block;
+            position: absolute;
+            border: 1px solid gray;
+        }
+
+        div p {
+            position: absolute;
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="C:\Users\Administrator\Desktop\상영1관.png" width="200" height="200">
+        <p style="left: 50px; top: 30px;">A</p>
+        <p style="left: 100px; top: 00px;">P</p>
+        <p style="left: 100px; top: 80px;">P</p>
+        <p style="left: 150px; top: 120px;">L</p>
+        <p style="left: 30px; top: 130px;">E</p>
+    </div>
+</body>
+
+</html> -->
+<!-- <html lang="ko">
+
+<head>
+    <style>
+#fixed{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 100px;
+    padding: 5px;
+    background: red;
+    color: white;
+
+}
+    </style>
+</head>
+
+<body>
+<div id="fixed">안녕하세요</div>
+</body>
+
+</html> -->
+<html lang="ko">
+
+<head>
+    <style>
+        #md {
+            padding: 5px;
+            color: blue;
+            margin-right: 15px;
+            float: left;
+            border-left: 5px solid purple;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            clear: both;
+        }
+
+        #dd {
+            border-top: 1px dotted blue;
+            border-bottom: 1px dotted blue;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="md">애완견 종류</div>
+    <div id="md">입양하기</div>
+    <div id="md">건강돌보기</div>
+    <div id="md">더불어살기</div>
+    <h1>강아지 용품 준비하기</h1>
+    <div id="dd">
+        <h3>강아지 집</h3>
+        <p>강아지가 편히 쉴 수 있는 포근한 집이 필요합니다. 강아지의 집은 강아지가 다 큰 후에도 계속 쓸 수 있는 집으로 구입하세요.집을 구입하실 때는 박음질이 잘 되어 있는지, 세탁이 간편한 제품인지
+            꼭 확인하시고 고르시는 것이 좋습니다.</p>
+    </div>
+
+    <div id="dd">
+        <h3>강아지 먹이</h3>
+        <p>강아지의 먹이는 꼭 어린 강아지용으로 나와있는 사료를 선택하세요. 강아지들은 사람에 비해 성장속도가 8배정도 빠르답니다. 따라서 강아지에게는 성장속도에 맞는 사료를 급여하셔야 합니다. 사람이 먹는
+            음식을 먹게 되면 양념과 향신료에 입맛이 익숙해지고, 비만이 될 가능성이 매우 높아집니다. 강아지용 사료는 생후 12개월까지 급여하셔야 합니다.</p>
+
+    </div>
+
+</body>
+
+</html>
+
+
+
+
+<html lang="ko">
+
+</html>
+<html lang="ko">
+
+</html>
+<html lang="ko">
+
+</html>
+<html lang="ko">
+
+</html>
