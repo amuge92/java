@@ -2,43 +2,66 @@
 <html lang="ko">
 
 <head>
-<style>
-    div{
-        margin: 10px 0px;
-    }
-    div div{
-        display: inline-block;
-        width: 120px;
-        text-align: right;
-        margin-right: 20px;
-    }
-</style>
+    <style>
+        html,body{
+            padding: 0;margin: 0;height: 100%;
+        }
+        div {
+            margin: 10px 0px;
+        }
+
+        div div {
+            display: inline-block;
+            width: 120px;
+            text-align: right;
+            margin-right: 20px;
+        }
+
+        .h {
+            width: 100%;
+            background-color: greenyellow;
+        }
+
+        .s {margin:0 5%;
+            width: 90%;height: 78%;
+            background-color: pink;
+        }
+    </style>
 </head>
 
 <body>
-    <meta charset="UTF-80">
-    <h1>설문지</h1>
-    <p>소프트웨어 기술에 대한 의견을 듣습니다. 많은 참여 부탁드립니다.</p>
-    <hr>
-    <div><div>성별</div>
-        <label><input type="radio" name="a" id="rd"> 남</label>
-        <label><input type="radio" name="a" id="rd"> 여</label></div>
-    <div><div>관심분야 </div>
-        <input type="text" list="data">
-        <datalist id="data">
-            <option >모바일 소프트웨어</option>
-        </datalist>
-    </div>
-    <div>
-        <div>진로(다중 선택)</div>
-        <label><input type="checkbox">개발</label>
-        <label><input type="checkbox">기획</label>
-        <label><input type="checkbox">영업</label>
-        <label><input type="checkbox">창업</label>
-    </div>
-    <div><div>남기고 싶은말</div> <textarea></textarea></div>
-    <span style="position: absolute; bottom: 20px;">Copyright &copy;2020 by Jiwon</span>
-
+    <meta charset="UTF-8">
+    <header class="h">
+        <h1 style="text-align: center;">설문지</h1>
+        <p>소프트웨어 기술에 대한 의견을 듣습니다. 많은 참여 부탁드립니다.</p>
+        <hr>
+        <br>
+    </header>
+    <section class="s">
+        <div>
+            <div>성별</div>
+            <label><input type="radio" name="a" id="rd"> 남</label>
+            <label><input type="radio" name="a" id="rd"> 여</label>
+        </div>
+        <div>
+            <div>관심분야 </div>
+            <input type="text" list="data">
+            <datalist id="data" >
+                <option>모바일 소프트웨어</option>
+            </datalist>
+        </div>
+        <div>
+            <div>진로(다중 선택)</div>
+            <label><input type="checkbox">개발</label>
+            <label><input type="checkbox">기획</label>
+            <label><input type="checkbox">영업</label>
+            <label><input type="checkbox">창업</label>
+        </div>
+        <div>
+            <div>남기고 싶은말</div> <textarea placeholder="말을"></textarea>
+        </div>
+        <span style="position: absolute; bottom: 20px;">Copyright &copy;2020 by Jiwon</span>
+    </section>
 </body>
 
 </html>

@@ -7,7 +7,16 @@
 3. URL부분에 작성
 4. <script></script>태그 안에 작성
 
-prompt : 입력함수*다이어로그 
+prompt : 입력함수*다이어로그  입력값은 문자열로 취급됨.
 confirm :  확인취소 (return true false)
 alert : 경고 다이어로그
+
+함수
+funtion 이름(){};
+기본적인 함수
+1.  isNaN()    NaN: 숫자가 아님을 나타내는 상수키워드
+
+2.  parseInt()
+
+3. eval();문자열 계산식 계산
 
