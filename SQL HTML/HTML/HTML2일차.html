@@ -3731,7 +3731,7 @@ caption{
 </body>
 
 </html> -->
-<html lang="ko">
+<!-- <html lang="ko">
 
 <head>
     <style>
@@ -3744,7 +3744,7 @@ caption{
 </head>
 
 <body>
-    <!-- <script>
+    <script>
         var amo = "q1w2e3r4";
         while (true) {
             var str = prompt("암호입력");
@@ -3756,7 +3756,7 @@ caption{
 
         re(eval(prompt("수식 입력!@#")));
 
-    </script> -->
+    </script>
     <script>
         document.write("<table  style='border-collapse: collapse;' border='1'>")
         for (var i = 0; i < 2; i++) {
@@ -3782,6 +3782,377 @@ caption{
     <video src="11.mp4" controls loop width="200px" height="200px"></video>
 </body>
 
+</html> -->
+<!-- <html lang="ko">
+
+<head>
+    <style></style>
+    <script>
+        function big(a, b) {
+            return a > b ? a : b;
+
+        };
+        function pr(a, b) {
+            for (var i = 0; i < b; i++) {
+                document.write(a)
+            }
+        };
+        function pr1() {
+            var a = prompt("무슨 요일?");
+            if (a == "월요일" || a == "화요일" || a == "수요일") {
+                document.write("근무")
+            }
+            else
+                document.write("휴식")
+        }
+        function ex1() {
+            var a = prompt("정수 입력");
+            if(isNaN(a)){
+                document.write("5류")
+            }
+            else{
+            for (var i = 0; i < a; i++) {
+                document.write("*");
+            }}
+        }
+    </script>
+</head>
+
+<body>
+    <script>
+        var b = big("123", "456");
+        document.write(b);
+        pr("%", 5);
+        pr1();
+        ex1();
+    </script>
+</body>
+
+</html> -->
+<!-- <html lang="ko">
+
+<head>
+    <style>
+        .a {
+            animation: wiwi 3s alternate infinite;
+        }
+
+        @keyframes wiwi {
+            to {
+                width: 10%;
+            }
+        }
+
+        div {
+
+            border: 1px solid green;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            left: 50px;
+            position: absolute;
+            line-height: 100px;
+          
+
+        }
+
+        div:hover {
+           transform: rotate(45deg);
+
+        }
+    </style>
+</head>
+
+<body>
+    <img width="100px" src="no2.jpg" class="a">
+    <div>Mouse Over</div>
+</body>
+
+</html> -->
+<!-- <html lang="ko">
+
+<head>
+    <style>
+        td {
+            width: 200px;
+        }
+
+        input[type=button] {
+            border: 0px;
+            margin: 10px 0;
+            background-color: whitesmoke;
+            box-shadow: 1px 1px 5px black;
+            width: 80%;
+            height: 50px;
+            font-size: large;
+        }
+
+        table {
+            position: static;
+            width: 80%;
+            margin: 0px 10%;
+        }
+
+        .a {
+
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">SOLDESK</h1>
+    <hr>
+    <div class="a">
+        <table>
+            <tr>
+                <td><input type="button" value="설문조사"></td>
+                <td><input type="button" value="NCS평가"></td>
+                <td><input type="button" value="시험응시"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="회원가입"></td>
+                <td><a href="log.html" style="text-decoration: none;"><input type="button" value="로그인"></a></td>
+                <td><input type="button" value="아이디/비번찾기"></td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html> -->
+<!-- <html lang="ko">
+
+<head>
+    <style></style>
+</head>
+
+<body>
+    <script>
+        // var a = new Date();
+        // document.write(a.toLocaleString() + "<br>");
+        // var b = new String("자바 스크립트");
+        // document.write(b + "<br>");
+        // document.write(b.length);
+
+        // var food = ['떡볶이', '김밥', '라면'];
+        // document.write(food[0]);
+
+
+        // var num = [1, 2, 3, 4, 5];
+        // var sum = 0;
+        // for (i = 0; i < num.length; i++) {
+        //     sum += num[i];
+
+        // }
+        // document.write(sum);
+
+
+        // var p = [30, 5, 8, 16, 9];
+        // for (var i = 0; i < p.length; i++) {
+
+        //     for (var j = 0; j < p[i]; j++) {
+        //         document.write("*")
+        //     }
+        //     document.write("<br>");
+        // }
+
+        // var a = new Array();
+        // a[0] = 10;
+        // a[1] = 20;
+        // a[2] = 30;
+        // a[3] = (a[0] + a[1] + a[2]) / 3;
+        // document.write(a[3]);
+
+        // var b = new Array();
+        // for (i = 0; i < 10; i++) {
+        //     b[i] = (Math.random() * 100) + 1;
+        // }
+        // var max = b[0];
+        // var temp1;
+        // for (i = 0; i < 10; i++) {
+        //     if (b[i] > max) {
+        //         temp1 = max;
+        //         max = b[i];
+        //         b[i] = temp1;
+
+        //     }
+        // }
+        // document.write(max+"<br>");
+        // document.write(b[0]);
+
+        var a = new Array("김","이","박");
+        var b = new Array("최");
+        var c;
+        c=a.concat(b);
+        document.write(c);
+        c=c.join("@@");
+        document.write(c);
+
+
+    </script>
+
+
+</html>
+</body> -->
+<!-- <html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title> 웹 폼</title>
+
+    <style>
+        body{
+            background-image:url(11.jpg) ;
+        }
+        fieldset{
+            background-color: whitesmoke;
+            margin: 20px 0px;
+        }
+        body {
+            width: 500px;
+            margin: 0px auto;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .reg {
+            text-align: right;
+            width: 120px;
+            display: inline-block;
+        }
+
+        .c {
+            width: 160px;
+            text-align: right;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+
+        <fieldset class="login">
+            <legend>로그인</legend>
+            <label class="c" for="user_id">아이디 </label>
+            <input type="text" id="user_id" size="10" autofocus><br>
+            <label class="c" for="user_pw">비밀번호 </label>
+            <input type="password" id="user_pw" size="10">
+            <input type="submit" value="로그인">
+        </fieldset>
+        <fieldset class="register">
+            <legend>가입하기</legend>
+            <ul>
+                <li>
+                    <label class="reg" for="user_name">아이디 <em>*</em></label>
+                    <input type="text" id="new_id" size="20" autocomplete="on" required>
+                </li>
+                <li>
+                    <label class="reg" for="new_pw1">비밀번호 <em>*</em></label>
+                    <input type="password" id="new_pw1" size="20" required>
+                </li>
+                <li>
+                    <label class="reg" for="new_pw2">비밀번호 확인 <em>*</em></label>
+                    <input type="password" id="new_pw2" size="20" required>
+                </li>
+                <li>
+                    <label class="reg" for="user_name">이름 <em>*</em></label>
+                    <input type="text" id="user_name" size="20" required>
+                </li>
+                <li>
+                    <label class="reg" for="user_mail">메일 주소 <em>*</em></label>
+                    <input type="email" id="user_mail" size="20" required>
+                </li>
+                <li>
+                    <label class="reg" for="user_tel">전화번호 </label>
+                    <input type="tel" id="user_tel" size="20">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset class="easys">
+            <legend>개발자</legend>
+            <textarea name="intro" rows="5" style="width: 100%;">
+ 자바 개발은 어려우면서도 수월하다.
+컴퓨터 언어 중 자바가 제일 재밌다.
+         </textarea>
+        </fieldset>
+        <fieldset class="sendform" style="text-align: center;">
+            <input type="submit" value="가입하기">
+            <input type="reset" value="다시쓰기">
+        </fieldset>
+    </form>
+</body>
+
+</html> -->
+
+<html lang="ko">
+
+<head>
+    <style>
+    </style>
+    <script>
+        function randomInt() {
+            return Math.floor(Math.random() * 9 + 1)
+
+        }
+    </script>
+</head>
+
+<body>
+    <p id="aa" style=" color: blue; background-color: yellow;" onclick="this.style.color = 'tomato'">asdfasd</p>
+
+    <script>
+        // var n = Math.PI * 2 * 3.14;
+        // document.write(n);
+
+        // for (var i = 0; i < 10; i++) {
+        //     var m = Math.random()*100;
+        //     var m1 = Math.floor(m);//m에서 소수점 이하 제거함(0~99사이);
+
+        //     document.writeln(m1);
+        // }
+
+        // var n1 = randomInt() + "*" + randomInt()
+        // document.writeln(n1);
+
+        // var n2 = prompt(n1 + "은?");
+        // if (n2 == null) {
+        //     document.write("종료");
+        // }
+        // else {
+        //     var result = eval(n1);
+        //     if (result == n2) {
+        //         document.write("정답")
+        //     }else 
+        //     document.write("틀림")
+        // }
+
+
+
+        // var dt = new Date();
+        // var ho = dt.getHours();
+        // var bu = dt.getMinutes();
+        // if (ho >= 12) {
+        //     document.body.style.backgroundColor="red";
+        // } else
+        //     document.write("<body style='background-color : yellow;'>")
+
+        // document.write("현재 시각 " + ho+"시"+bu+"분");
+
+
+        var n = document.getElementById("aa");
+        document.write(n.innerHTML+"<br>");
+        document.write(n.onclick);
+        document.write(n.style.color);
+    </script>
+
+
+
+</body>
+
 </html>
 
 
@@ -3796,18 +4167,7 @@ caption{
 
 
 
-
-
-
-
-
 <!-- 
-<html lang="ko"><head><style></style></head><body></body></html>
-<html lang="ko"><head><style></style></head><body></body></html>
-<html lang="ko"><head><style></style></head><body></body></html>
-<html lang="ko"><head><style></style></head><body></body></html>
-<html lang="ko"><head><style></style></head><body></body></html>
-<html lang="ko"><head><style></style></head><body></body></html>
 <html lang="ko"><head><style></style></head><body></body></html>
 <html lang="ko"><head><style></style></head><body></body></html>
 <html lang="ko"><head><style></style></head><body></body></html>

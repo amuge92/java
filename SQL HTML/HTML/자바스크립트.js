@@ -20,3 +20,28 @@ funtion 이름(){};
 
 3. eval();문자열 계산식 계산
 
+
+자바스크립트 객체
+1. 코어 객체(기본 객체)
+->Array,Date,String,Math
+
+2. HTML DOM 객체
+3. 브라우저 객체 (BOM)
+
+배열 함수
+var a = new Array("김","이","박");
+        var b = new Array("최");
+        var c;
+        c=a.concat(b);
+        c=c.join("@@");
+        c=a.reverse();
+        c=a.toString(); 원소 사이에 ","를 삽입
+
+        var n = new Date(2020,8,21);
+        var b1 = n.getDate();
+        var b2 = n.getHours();
+        document.write(n.toLocaleString());
+        달만 입력한 달 다음달이 출력 된다.
+        var n = new Date();현재 시간 입력
+        n.toUTCString();으로 돌리면 현재날 출력
+        documet.body.style.backgroundcolor(red);
