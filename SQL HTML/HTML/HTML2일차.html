@@ -4087,8 +4087,7 @@ caption{
 </body>
 
 </html> -->
-
-<html lang="ko">
+<!-- <html lang="ko">
 
 <head>
     <style>
@@ -4153,6 +4152,490 @@ caption{
 
 </body>
 
+</html> -->
+<!-- <!doctype html>
+
+<head>
+
+   <script>
+
+      function a(){
+
+         return this.num;
+
+      }
+
+      function plus(money){
+
+         this.num+=money;
+
+      }
+
+      function minus(money){
+
+         this.num-=money;
+
+         return money;
+
+      }
+
+      var mon=new Object();  //사용자 객체
+
+      mon.name="김길동";
+
+      mon.id="123";
+
+      mon.num=30000; //초기값
+
+  
+
+      mon.a=a;
+
+      mon.plus=plus;
+
+      mon.minus=minus;  //메소드 작성 
+
+  
+
+     </script>
+
+</head>
+
+<body>
+
+   <script>
+
+      //객체 활용
+
+      document.write(mon.name);
+
+      mon.plus(10000);
+
+      document.write(mon.num + "<br>");
+
+      mon.minus(5000);
+
+      document.write(mon.num + "<br>");
+
+​
+
+   </script>
+
+   
+
+</body>
+
+</html>  -->
+<!--  
+
+<head>
+   <script>  //2. 리터럴 표기법으로 객체 만들기​
+     var mon={
+         name:"김길동",
+         id:"123",
+         num:30000,
+        a:function(){
+           return this.num;
+        },
+
+        plus:function(money){
+           this.num+=money;
+        },
+
+        minus:function(money){
+           this.num-=money;
+           return money;
+        }
+     };
+     </script>
+</head>
+<body>
+   <script>
+      document.write(mon.id+",");
+      mon.plus(10000);
+      document.write(mon.a() + "<br>");
+      mon.minus(5000);
+      document.write(mon.a() + "<br>");
+   </script>
+</body>
+</html>  -->
+<!-- <!doctype html>
+<head>
+<script> //3. 프로토타입으로 객체 만들기
+function Mon(name,id,n){
+this.name=name;
+this.id=id;
+this.n=n;
+
+this.a=function(){
+return this.n;
+}
+
+this.plus=function(money){
+this.n+=money;
+}
+
+this.minus=function(money){
+this.n-=money;
+return money;
+}
+}
+</script>
+</head>
+<body>
+<script>
+var aa=new Mon("tom","123",30000);
+document.write(aa.name);
+
+aa.plus(10000);
+document.write(aa.a()+"<br>");
+aa.minus(5000);
+document.write(aa.a()+"<br>");
+</script>
+</body>
+</html> -->
+<!-- <html lang="ko">
+
+<head>
+    <style>
+
+    </style>
+    <script>
+        function pr(ary) {
+            for (var i = 0; i < ary.length; i++) {
+                document.write(ary[i] + " ");
+            }
+            document.write("<br>");
+        }
+
+    </script>
+</head>
+
+<body>
+    <script>
+        //Array()에 name 객체 존재  전체 배열(문자열);
+        var name1 = new Array("aaa", "b", "cc");
+
+        pr(name1);
+
+        var long = name1[0];//제일 긴
+        for (var i = 1; i < name1.length; i++) {
+            if (name1[i].length > long.length) {
+                long = name1[i];
+            }
+        }
+        document.write(long + "<br>")
+
+        var n = name1[0];
+        for (var i = 1; i < name1.length; i++) {
+            if (name1[i] < n) {
+                n = name1[i];
+            }
+        }
+        document.write(n + "<br>");
+
+
+        var music = new Object();  //1. 사용자 객체
+        music.title = "aa";
+        music.singer = "bb";
+        music.price = 20000;
+
+        document.write(music.title + "<br>")
+        document.write(music.singer + "<br>")
+        document.write(music.price + "<br>")
+
+        var music1 = {//리터럴
+            title: "aa", singer: "bb", price: 20000
+        };
+
+
+        function music2(){//프로토타입
+            this.title = "aa";
+            this.singer= "bb";
+            this.price = 20000;
+        }
+        var music3 = new music2();
+
+
+    </script>
+
+</body>
+
+</html> -->
+<!-- <html lang="ko">
+
+<head>
+    <style>
+        #aa {
+            color: blueviolet;
+            background-color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <script>
+        function change(){
+            var d = document.getElementById("java"); 
+            //스크립트를 black 폰트 사이즈 30px block  width 3배 border 3px 도트 색deeppink margin 10px
+            d.style.color =  "black";
+            d.style.fontSize = "30px";
+            d.style.width =  "3em";
+            d.style.display = 'block';
+            d.style.border =  "3px dotted deeppink";
+            d.style.margin =  "10px";
+        }
+    </script>
+
+     
+    <p style="color: blue;">자바 <span id="java" style="color: green;">스크릷트</span></p>
+    <input type="button" value="버튼" onclick="change()">
+
+
+
+
+
+    <p id="aa" onclick="this.style.color='white'">가나다라마바사 아자차카타파하
+    <span style="color: beige;">ㄱㄴㄷㄻㅄㅇㅈㅊㅋㅌㅍㅎ</span></p>
+    <script>
+
+        var n = document.getElementById("aa");
+        var t = n.id + "\n";  //아이디값
+        t += n.innerHTML + "\n";  //내용값
+        t += n.onclick +"\n";     //온클릭 내용
+        alert(t)//경고 다이어로그;
+
+    </script>
+</body>
+
+</html> -->
+<!-- <html lang="ko">
+
+<head>
+    <style>
+
+    </style>
+    <script>
+        //id값을 알아내서
+        // function change() {
+        //     var n = document.getElementById("chi");
+        //     n.innerHTML = "보노<img src='no1.jpg'>보노";
+        // };
+    </script>
+</head>
+
+<body>
+     <p id="chi" style="color: blue;" onclick="change()">클릭
+        <span style="color: red;">해보세요</span></p>
+
+    <script>
+        var music = {
+            singer: "bts", money: 100000, title: "dynamite"
+        };
+        document.write(music.money);
+        for (var key in music) {
+            document.write(music[key] + "\n");
+        }
+
+        var output = '';
+        for (var key in music) {  //for in구문
+            output += key + ':' + music[key] + '\n';
+        }
+        alert(output);
+
+    </script>
+
+</body>
+
+</html> -->
+<!-- <html lang="ko">
+
+<head>
+    <style></style>
+</head>
+
+<body>
+    <script>
+        var Book = new Object();
+        Book.title = "송아지";
+        Book.author = "망아지";
+        Book.price = 100000;
+
+        var Book1 = {
+            title: "송아지",
+            author: "망아지",
+            price: 100000
+        }
+
+        function Book2() {
+            this.title = "송아지";
+            this.author = "망아지";
+            this.price = 100000;
+        }
+
+
+        function student(name, score) {
+            this.name = name;
+            this.score = score;
+            this.grade = function () {
+                if (this.score > 90)
+                    return "A";
+                else(this.score <=90)
+                    return "b";
+            }
+        }
+        var a = new student("juli", 60);
+        var b = new student("tom", 100);
+
+        document.write(a.score + a.grade());
+        document.write();
+
+    </script>
+</body>
+
+</html> -->
+<!-- <html lang="ko">
+
+<head>
+    <script>
+        function ch(obj, color) {
+            obj.style.color = color;
+        }
+    </script>
+    <style>
+
+
+
+    </style>
+</head>
+
+<body>
+    <button onclick="ch(this,'red')">버튼1</button>
+    <button onclick="ch(this,'orange')">버튼2</button>
+    <div onclick="ch(this,'yellow')">변경</div>
+
+</body>
+
+</html> -->
+<!-- <html lang="ko">
+
+<head>
+    <style></style>
+    <script>
+        function ch() {//태그이름으로 DOM객체 찾기
+            var n = document.getElementsByTagName("span")
+            for (var i = 0; i < n.length; i++) {
+              var num = n[i];
+              num.style.color="blue";
+              num.style.fontSize="30px"
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="ch()">눌러</button>
+    GV 왕십리점에서 한 직원이 안내방송 마이크가 켜진 상태에서 관객을 비하하는 발언을 해 논란에 휩싸였다.
+    지난 22일 CGV 왕십리에서 <span>'BanG Dream!(뱅드림) 8th☆LIVE' Natsu no Yagai 3DAYS</span>
+    라이브 뷰잉 행사가 일본 현지 문제로 지연, 직원이 장내 방송을 통해 상영 지연을 공지했다.
+    '뱅드림'은 밴드를 결성한 5명의 여고생이 함께 성장해가는 이야기를 그린 일본 애니메이션.
+    21일부터 23일까지 왕십리점 등 CGV 4개 극장에서 '뱅드림' 일본 현지 콘서트가 공개됐다.
+    지연 공지 후 마이크가 꺼지지 않은 상태에서 직원이
+    <span>"오타쿠들 징그럽다. 내가 뒤에서 보니까 핸드폰으로 수영복 사진 보고 있다"</span>라고 말했다.
+    이 목소리는 영화를 기다리던 관객들에게 그대로 전달됐고, SNS와 온라인 커뮤니티를 중심으로 퍼져나갔다.
+    <span>오타쿠</span>는 애니메이션 등 특정 분야를 좋아하는 사람들을 칭하는 일컫는 말로 <span>부정적인 뉘앙스</span>가 담겼다.
+
+
+</body>
+
+</html> -->
+<!-- <html lang="ko">
+
+<head>
+    <script>
+        function ch2() {
+            var bodytag = document.getElementById("theBody");
+            var aC = ["#ff0", "#6c0", "#fcf", "#cf0", "#39f"];
+            var aN = parseInt(Math.random() * 5);
+            bodytag.style.backgroundColor = aC[aN];
+        }
+    </script>
+    <style>
+    </style>
+</head>
+
+<body id="theBody">
+    <button onclick="ch2()">배경 색상 바꾸기</button>
+</body>
+
+</html> -->
+<!-- <html lang="ko">
+
+<head>
+    <style>
+        div {
+            display: inline-block;
+        width: 50px;
+        padding: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        // var a = new String("안녕 하세요");
+        // var b = "~~";
+        // var c = a.concat(b);
+        // document.write(c);
+        // document.write(c.charAt(0));
+        // document.write(c.split(' '));
+        // document.write(c.replace("하세요", "해요"));
+
+        var menu = ["짜장", "돈까", "된장", "김찌", "회덮"];
+        var menuNum = Math.floor(Math.random() * 5)
+        var result = menu[menuNum];
+        document.write(result);
+
+
+        var co = ["red", "orange", "blue", "green", "pink"];
+        for (i = 0; i < co.length; i++) {
+            var str = "<div style = 'background-color :";
+            str += co[i] + "'>" + co[i] + "</div>"
+            document.write(str);
+        }
+
+    </script>
+
+</body>
+
+</html> -->
+<html lang="ko">
+
+<head>
+    <style>
+    </style>
+</head>
+
+<body>
+    <script>
+        function ac() {
+        var a,b,c;
+        a = Math.random()*255;
+        b = Math.random()*255;
+        c = Math.random()*255;
+        var str = "rgb("+a+","+b+","+c+")";
+        var n = document.getElementById("zzz");
+        n.style.color = str;
+            }
+
+    </script>
+
+    <button onclick="ac()">변경</button>
+    <div id="zzz">자바스크립트</div>
+
+</body>
+
 </html>
 
 
@@ -4164,18 +4647,7 @@ caption{
 
 
 
-
-
-
 <!-- 
-<html lang="ko"><head><style></style></head><body></body></html>
-<html lang="ko"><head><style></style></head><body></body></html>
-<html lang="ko"><head><style></style></head><body></body></html>
-<html lang="ko"><head><style></style></head><body></body></html>
-<html lang="ko"><head><style></style></head><body></body></html>
-<html lang="ko"><head><style></style></head><body></body></html>
-<html lang="ko"><head><style></style></head><body></body></html>
-<html lang="ko"><head><style></style></head><body></body></html>
 <html lang="ko"><head><style></style></head><body></body></html>
 <html lang="ko"><head><style></style></head><body></body></html>
 <html lang="ko"><head><style></style></head><body></body></html>

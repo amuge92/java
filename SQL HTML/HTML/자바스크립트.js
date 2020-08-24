@@ -45,3 +45,21 @@ var a = new Array("김","이","박");
         var n = new Date();현재 시간 입력
         n.toUTCString();으로 돌리면 현재날 출력
         documet.body.style.backgroundcolor(red);
+
+
+        DOM(Document Object Model) : 각 HTML태그를 하나의 객체로 만듬 <div>,<p>....
+           HTML 태그가 출력된 모양과 컨텐츠를 제어한다.
+           <DOM 구성요소 5가지>
+            1. 프로퍼티(property) : DOM 객체의 변수
+                ex> var n = new Object ....n이 프로퍼티
+            2. 메소드 
+            3. 컬렉션 : 데이터의 집합(배열)
+            4. 이벤트 리스너
+            5. CSS스타일
+
+            -DOM 객체 구분 : id속성
+            <p id="a">안녕<p>
+            
+            -DOM 객체 찾기 : documnet.getElementById();
+            var p =  documnet.getElementById("a");
+            p.style.color="red";
