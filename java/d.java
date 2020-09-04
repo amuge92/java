@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class ад {
 	static void dd(int[] bb, int n, int k) {
 		int temp;
+int a;
 		int count = 0;
 		for (int i = 0; i < n - 1; i++) {
 			for (int j = 1 + i; j < n; j++) {
